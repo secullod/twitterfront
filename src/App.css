@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+.container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 1000px;
+  height: 1000px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.col {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+}
+
+/* .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#metamask {
+  margin: 10px;
+  border: solid 1px #e4761b;
+  color: #e4761b;
+  font-weight: bold;
+  box-shadow: rgba(157, 75, 19, 0.9) 0px 0px 10px 0px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#metamask:hover {
+  background: rgba(228, 118, 27, 0.5);
+  cursor: pointer;
+}
+
+#metamask:active {
+  transform: translateY(1px) translateX(1px);
+} */
+
+.btn {
+  border: solid 2px black;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.btn:hover {
   color: white;
+  background: black;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:active {
+  transform: translateY(1px) translateX(1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+}
+
+.tweetbox {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.form-control {
+  border: 1px solid black;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 10px;
+  align-items: center;
+}
+
+/* #nft-image {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+#metamask-image {
+  width: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+} */
+
+.card.tweet {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  margin: 10px;
+}
+
+.tweet .card-body {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  margin: 10px;
+}
+
+.follow .card-header {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+}
+
+.card.follow {
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  margin: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  margin: 10px;
+}
+.card-header {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }
