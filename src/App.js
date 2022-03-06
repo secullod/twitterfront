@@ -10,7 +10,7 @@ import UsersDropdown from "./components/UsersDropdown";
 import CreateUser from "./components/CreateUser";
 import img from "./4k.jpeg";
 
-export const HOST = "http://nftweeter.herokuapp.com";
+export const HOST = "https://nftweeter.herokuapp.com";
 
 // const HOST = "http://localhost:3000";
 
