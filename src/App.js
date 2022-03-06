@@ -21,17 +21,16 @@ function App() {
   const [currentUser, setCurrentUser] = useState(3);
   const [submitToggle, setSubmitToggle] = useState(false);
 
-  const getPageData = () => {
-    API.get(`${HOST}/tweets/${currentUser}`).then((tweets) =>
-      setTweets(tweets.data)
-    );
-    API.get(`${HOST}/users`).then((users) => setUsers(users.data));
-    API.get(`${HOST}/follows/${currentUser}`).then((usersFollowed) =>
-      setUsersFollowed(usersFollowed.data)
-    );
-  };
-
   useEffect(() => {
+    const getPageData = () => {
+      API.get(`${HOST}/tweets/${currentUser}`).then((tweets) =>
+        setTweets(tweets.data)
+      );
+      API.get(`${HOST}/users`).then((users) => setUsers(users.data));
+      API.get(`${HOST}/follows/${currentUser}`).then((usersFollowed) =>
+        setUsersFollowed(usersFollowed.data)
+      );
+    };
     getPageData();
   }, [currentUser, submitToggle]);
 
