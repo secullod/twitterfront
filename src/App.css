@@ -2,14 +2,21 @@
   background-color: #ffffff;
   border-radius: 5px;
   padding: 25px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   width: 1000px;
   height: 1000px;
   position: relative;
+}
+
+.two {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  border-radius: 5px;
 }
 
 .col {
@@ -25,13 +32,13 @@
   margin: 5px;
 }
 
-/* .input-group {
+/* /* .input-group {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-}
+} *
 
 #metamask {
   margin: 10px;
@@ -69,18 +76,12 @@
   cursor: pointer;
 }
 
-.btn:active {
-  transform: translateY(1px) translateX(1px);
+.tweetbox {
+  margin: 10px;
 }
-
-.row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 5px;
+.create-user {
+  width: 200px;
+  margin: 10px;
 }
 
 .tweetbox {
@@ -88,13 +89,37 @@
   padding: 30px;
   border-radius: 5px;
 }
+.three {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-.form-control {
+.create-user {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tweetbox .form-control {
   border: 1px solid black;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 40px;
-  margin: 10px;
+  padding: 70px;
+  margin: 30px;
+  align-items: center;
+}
+
+.create-user .form-control {
+  border: 1px solid black;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
   align-items: center;
 }
 
@@ -108,6 +133,15 @@
   vertical-align: middle;
   margin-right: 5px;
 } */
+
+.form-label {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  font-weight: bold;
+}
 
 .card.tweet {
   width: 300px;
@@ -158,12 +192,59 @@
 }
 
 .dropdown {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  margin: 10px;
+}
+
+.dropdown .btn {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  border: none;
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 .dropdown-menu {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  align-items: center;
+}
+
+.dropdown-item {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #1da1f2;
+  font-weight: bold;
+}
+
+#icon-image {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.one {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.fa-caret-down {
+  font-size: large;
+  margin-left: 2px;
 }
